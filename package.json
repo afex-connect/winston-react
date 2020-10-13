@@ -6,7 +6,10 @@
   "scripts": {
     "test": "jest --verbose",
     "lint": "eslint .",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint"
   },
   "repository": {
     "type": "git",

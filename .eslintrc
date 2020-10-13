@@ -6,6 +6,9 @@
       "jsx": true
     }
   },
+  "ignorePatterns": [
+    "dist/**"
+  ],
   "settings": {
     "react": {
       "version": "detect"
