@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base",
+  "compilerOptions": {
+    "lib": [
+      "es2019"
+    ],
+    "types": [
+      "node",
+      "jest"
+    ],
+    "paths": {
+      "*": [
+        "types/*"
+      ]
+    }
+  }
+}
