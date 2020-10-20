@@ -1,0 +1,37 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "ignorePatterns": [
+    "dist/**"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": [
+    "import-length",
+    "import",
+    "simple-import-sort",
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "semistandard"
+  ],
+  "rules": {
+    "import-length/import-length": "error",
+    "import/no-useless-path-segments": "error",
+    "import/order": "error",
+    "import/newline-after-import": "error",
+    "import/no-anonymous-default-export": "error",
+    "simple-import-sort/sort": "error",
+    "react/prop-types": "off"
+  }
+}
