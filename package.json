@@ -1,7 +1,19 @@
 {
   "name": "winston-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Winston implementation for React",
+  "keywords": [
+    "logger",
+    "logging",
+    "loglevel",
+    "logs",
+    "react",
+    "react",
+    "tools",
+    "winston-react",
+    "winston",
+    "winstonjs"
+  ],
   "main": "dist/index.js",
   "scripts": {
     "test": "jest --verbose",
