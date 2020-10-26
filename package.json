@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/panagiros/winston-react.git"
+    "url": "git+https://github.com/afex-connect/winston-react.git"
   },
   "author": "Elvis Munoz <elvis.munoz.f@gmail.com>",
   "private": true,
   "bugs": {
-    "url": "https://github.com/panagiros/winston-react/issues"
+    "url": "https://github.com/afex-connect/winston-react/issues"
   },
-  "homepage": "https://github.com/panagiros/winston-react#readme",
+  "homepage": "https://github.com/afex-connect/winston-react#readme",
   "devDependencies": {
     "@testing-library/react": "^11.0.4",
     "@types/jest": "^26.0.14",
