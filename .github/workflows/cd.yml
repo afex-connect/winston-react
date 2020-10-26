@@ -1,7 +1,9 @@
-name: 'continuous integration'
+name: 'continuous delivery'
 
 on:
   push:
+    paths-ignore:
+      - '**.md'
     branches:
       - '*-RC'
     tags:
