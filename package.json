@@ -1,6 +1,6 @@
 {
   "name": "winston-react",
-  "version": "1.0.0",
+  "version": "1.0.0-RC.0",
   "description": "A Winston implementation for React",
   "keywords": [
     "logger",
@@ -29,7 +29,6 @@
     "url": "git+https://github.com/afex-connect/winston-react.git"
   },
   "author": "Elvis Munoz <elvis.munoz.f@gmail.com>",
-  "private": true,
   "bugs": {
     "url": "https://github.com/afex-connect/winston-react/issues"
   },
@@ -69,5 +68,6 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": "eslint --fix"
-  }
+  },
+  "license": "MIT"
 }
