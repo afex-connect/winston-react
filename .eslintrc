@@ -15,23 +15,42 @@
     }
   },
   "plugins": [
+    "@typescript-eslint",
     "import-length",
     "import",
-    "simple-import-sort",
-    "@typescript-eslint"
+    "simple-import-sort"
   ],
   "extends": [
-    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
+    "semistandard",
     "plugin:react/recommended",
-    "semistandard"
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     "import-length/import-length": "error",
-    "import/no-useless-path-segments": "error",
-    "import/order": "error",
     "import/newline-after-import": "error",
     "import/no-anonymous-default-export": "error",
-    "simple-import-sort/sort": "error",
-    "react/prop-types": "off"
-  }
+    "import/no-useless-path-segments": "error",
+    "import/order": "error",
+    "react/prop-types": "off",
+    "simple-import-sort/imports": "error"
+  },
+  "overrides": [
+    {
+      "files": ["**/*spec.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "rules": {
+        "react-hooks/rules-of-hooks": "off"
+      }
+    },
+    {
+      "files": ["**/*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "rules": {
+        "@typescript-eslint/no-use-before-define": "error",
+        "no-use-before-define": "off"
+      }
+    }
+  ]
 }
